@@ -1,0 +1,13 @@
+name = "iplist-notification"
+main = "src/index.js"
+compatibility_date = "2025-04-14"
+
+[triggers]
+crons = [ "0 0 7 * *" ]
+
+[vars]
+WEBHOOK_URL = "Your webhook"
+
+[[kv_namespaces]]
+binding = "IP_KV"
+id = "kvid"
